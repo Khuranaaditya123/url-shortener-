@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/short.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/short", "dest": "/api/short.js" },
+    { "src": "/", "dest": "/views/index.ejs" }
+  ]
+}
